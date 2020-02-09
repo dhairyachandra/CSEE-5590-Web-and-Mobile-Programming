@@ -1,0 +1,80 @@
+.he{
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: darkslateblue;
+    color: gold;
+    text-align: center;
+}
+
+header li{
+        display: inline;
+        float: left;
+        }
+        
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+.t{
+    margin-top: 100px;
+}
+.t1{
+    margin-top: 20px;
+    width: 100%
+}
+
+.polaroid {
+    margin-top: 100px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 20%;
+    margin-left: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.polaroid:hover{
+    float: left;
+    margin-right: 20px;
+    border-radius: 20%;
+    margin-left: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 green, 0 6px 20px 0 green;
+}
+
+.polaroid img{
+    margin-top: 15px
+}
+.cont {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.text-center{
+    margin-left: 120px;
+}
+
+.m{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:18%;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img{
+    border-radius: 20%;
+}
