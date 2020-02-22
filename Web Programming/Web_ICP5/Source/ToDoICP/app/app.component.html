@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body class="text-white">
+<div class="container" >
+  <div class="row">
+    <div class="col-12 text-center">
+      <h2 style="margin-top: 40px;">TODO LIST</h2>
+    </div>
+  </div>
+  <!--code to create form for user to add new task-->
+  <form #addItem = "ngForm" (ngSubmit)="submitNewItem(addItem.value)">
+    <div class=" col-12 form-group row text-center" style="margin-top: 40px;">
+        <div class="col-10 ">
+          <input type="text" class="form-control" style="height: 40px" name="taskName" ngModel/>
+        </div>
+      <div class="col-2">
+      <button type="submit" class="btn btn-info">Add Task</button>
+      </div>
+    </div>
+  </form>
+  <!--Displaying pending items list-->
+  <div class="text-center" style="padding-top: 30px"><h3>PENDING TASKS</h3></div>
+  <div class="row ">
+    <div class="col-12">
+      <!--check if there are pending items present-->
+      <div *ngIf="items.length > 0">
+        <div *ngFor="let item of items; let id = index">
+          <div class="ml-1 mr-1 row itemList border border-secondary" style="height: 40px">
+            <div class="col-10" style="padding: 10px" >
+              <div class="text-left" (click)="completeItem(item)">{{item}}</div>
+            </div>
+            <div class="col-2 text-right" style="padding: 10px">
+              <button (click)="deleteItem(item)"><i class="fa fa-trash"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--check if there are pending items are not present-->
+      <div class="itemList" *ngIf="items.length == 0">
+        <h4>No Pending Tasks Available!</h4>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
+
