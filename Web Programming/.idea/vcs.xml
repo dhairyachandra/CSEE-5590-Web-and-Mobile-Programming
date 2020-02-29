@@ -6,6 +6,10 @@
     <mapping directory="$PROJECT_DIR$/Web_ICP5/Angular/LocalStorageDemo" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Web_ICP5/ICP/CalculatorICP" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Web_ICP5/ICP/ToDoICP" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Web_ICP5/Source/CalculatorICP" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Web_ICP5/Source/ToDoICP" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Web_ICP6/Source/ICE-MashUp/MashUp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Web_ICP6/Source/UseCase/MyWiki" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../Web_MobileProgramming" vcs="Git" />
   </component>
 </project>
