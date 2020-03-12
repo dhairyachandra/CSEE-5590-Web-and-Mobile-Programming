@@ -1,0 +1,21 @@
+<div class="game-container" style=" left:50%;
+ top:50%; margin-left:-250px;
+ margin-top:-250px; position:absolute;">
+  <div class="game-header">
+    <h3 class="logo" [ngClass]="{'new-best-score': betterScore}">Score: {{score}}</h3>
+    <div class="score-block">
+      <h3 class="logo"></h3>
+      <h3 class="score" [ngClass]="{'new-best-score': betterScore}">Best Score: {{bestScore}}</h3>
+    </div>
+  </div>
+  <div class="row" *ngFor="let column of board; let i = index;">
+    <div class="column" [ngStyle]="{'background-color': setColors(i, j)}" *ngFor="let row of column; let j = index"></div>
+  </div>
+  <div class="start-button btn-success btn-lg btn-block" [ngClass]="{'disable-clicks': gameStarted}" (click)="showMenu()">Start</div>
+  <div class="new-game-menu" style="background: white" *ngIf="showMenuChecker">
+
+    <span class="new-game-menu-label">Select Mode</span>
+    <div class="start-button new-game-button btn btn-success" (click)="newGame(mode)" *ngFor="let mode of findKeys(availableModes)">{{availableModes[mode]}}</div>
+  </div>
+</div>
+
